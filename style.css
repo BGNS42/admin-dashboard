@@ -54,3 +54,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------ START ----------- */
+
+.container {
+    display: grid;
+    grid-template: 1fr 3fr / 1fr 3fr 1fr ;
+
+    grid-template-areas: 
+        "sidebar header header"
+        "sidebar article rightMenu";
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.article {
+    grid-area: article;
+}
+
+.right-menu {
+    grid-area: rightMenu;
+}
