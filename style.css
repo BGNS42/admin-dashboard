@@ -76,9 +76,9 @@ body {
         "sidebar article rightMenu";
 }
 
-.container>div>* {
-    /* border: 1px solid blue; */
-}
+/* .container>div>* {
+    border: 1px solid blue;
+} */
 
 .header {
     grid-area: header;
@@ -102,7 +102,7 @@ body {
 .sidebar {
     grid-area: sidebar;
     display: grid;
-    grid-template: 1fr 2fr 3fr / 1fr;
+    grid-template: min(50%, 60px) 2fr 3fr / 1fr;
     gap: 4px;
 
     background-color: var(--sidebar-bg-clr);
@@ -110,6 +110,47 @@ body {
 
     text-align: start;
     padding: .5rem;
+
+    font-weight: bold;
+}
+
+#sidebar-top {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: minmax(50%, 40px) ;
+    gap: .5rem;
+
+    font-size: 1.2rem;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+#sidebar-top .icon {
+    width: max(50%, 40px);
+    place-self: center;
+}
+
+.menu li {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: minmax(50%, 40px) ;
+    gap: .5rem;
+
+    align-items: center;
+    /* list-style: none; */
+    font-size: .9rem;
+
+    cursor: pointer;
+}
+
+li .icon {
+    width: min(50%, 18px);
+    place-self: center;
+}
+
+#sidebar-config {
+    margin-top: 2rem;
 }
 
 .article {
