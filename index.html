@@ -16,13 +16,21 @@
                 </div>
                 <div class="notification">
                     <img src="./assets/icons/notify.svg" alt="Bell shape button for notifications" class="icon" id="notify-icon">
-                    <img src="./assets/icons/avatar.svg" alt="" class="icon" id="user-icon">
+                    <img src="./assets/icons/avatar.svg" alt="A person icon with a round border" class="icon" id="user-icon">
                     <p>Admin Admin</p>
                 </div>
             </div>            
             <div class="bottom">
-                <div class="greeting">LOGO + Hi there, USERNAME (@USERNAME)</div>
-                <div class="buttons">button button button</div>
+                <div class="greeting">
+                   <img src="./assets/icons/avatar.svg" alt="A person icon with a round border" class="icon">
+                   <p class="placeholder">Hi there,</p>
+                   <h3 class="userName">Admin Admin (@AdminAdmin)</h3>
+                </div>
+                <div class="buttons">
+                    <button class="button"><span>New</span></button>
+                    <button class="button"><span>Upload</span></button>
+                    <button class="button"><span>Share</span></button>
+                </div>
             </div>
         </div>
         <div class="sidebar">
@@ -72,7 +80,7 @@
             </div>
         </div>
         <div class="article">
-            <p>Your Projects</p>
+            <h3 class="title" id="article-title">Your Projects</h3>
             <div class="project-card">Project Card 1</div>
             <div class="project-card">Project Card 2</div>
             <div class="project-card">Project Card 3</div>
@@ -81,8 +89,32 @@
             <div class="project-card">Project Card 6</div>
         </div>
         <div class="right-menu">
-            <p>Announcements</p>
-            <p>Trending</p>
+            <div class="menu" id="announcements">
+                <h3 class="title" id="announcement-title">Announcements</h3>
+                <div class="card" id="announcements-card">
+                    <div class="announcement-1">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="announcement-2">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="announcement-3">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu" id="trending">
+                <h3 class="title" id="trend-title">Trending</h3>
+                <div class="card" id="trend-card">
+                    <div class="trend-1">Profile 1</div>
+                    <div class="trend-2">Profile 2</div>
+                    <div class="trend-3">Profile 3</div>
+                    <div class="trend-4">Profile 4</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
