@@ -238,7 +238,7 @@ body {
     gap: .5rem;
 
     align-items: center;
-    font-size: .9rem;
+    font-size: 1rem;
 
     cursor: pointer;
 }
@@ -304,8 +304,16 @@ li .icon {
   padding-right: 1rem;
 }
 
+#announcements-card {
+  display: grid;
+}
+
 #trending.menu {
   padding-bottom: 1rem;
+}
+
+#trend-card {
+  display: grid;
 }
 
 .right-menu .card {

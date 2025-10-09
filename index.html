@@ -22,7 +22,7 @@
             </div>            
             <div class="bottom">
                 <div class="greeting">
-                   <img src="./assets/icons/avatar.svg" alt="A person icon with a round border" class="icon">
+                   <img src="./assets/icons/avatar.svg" alt="A person icon with a round border" class="icon" id="bottom-user-icon">
                    <p class="placeholder">Hi there,</p>
                    <h3 class="userName">Admin Admin (@AdminAdmin)</h3>
                 </div>
@@ -81,12 +81,60 @@
         </div>
         <div class="article">
             <h3 class="title" id="article-title">Your Projects</h3>
-            <div class="project-card">Project Card 1</div>
-            <div class="project-card">Project Card 2</div>
-            <div class="project-card">Project Card 3</div>
-            <div class="project-card">Project Card 4</div>
-            <div class="project-card">Project Card 5</div>
-            <div class="project-card">Project Card 6</div>
+            <div class="project-card">
+                <h3 class="title" id="p1-title">Super cool project</h3>
+                <p class="description" id="p1-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil deserunt nisi, porro numquam commodi minima ducimus similique distinctio laborum voluptatibus ipsam error vero quidem at hic eius? Deleniti, dicta laudantium.</p>
+                <div class="icons" id="p1-icons"> 
+                    <img src="./assets/icons/star.svg" alt="A star to favourite the project" class="icon" id="star-icon"> 
+                    <img src="./assets/icons/eye.svg" alt="An eye to set the view option of card" class="icon" id="eye-icon">
+                    <img src="./assets/icons/share.svg" alt="An icon showing two lines usually to representing sharable content" class="icon" id="share-icon">
+                </div>
+            </div>
+            <div class="project-card">
+                <h3 class="title" id="p2-title">Less cool project</h3>
+                <p class="description" id="p2-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil deserunt nisi, porro numquam commodi minima ducimus similique distinctio laborum voluptatibus ipsam error vero quidem at hic eius? Deleniti, dicta laudantium.</p>
+                <div class="icons" id="p2-icons"> 
+                    <img src="./assets/icons/star.svg" alt="A star to favourite the project" class="icon" id="star-icon"> 
+                    <img src="./assets/icons/eye.svg" alt="An eye to set the view option of card" class="icon" id="eye-icon">
+                    <img src="./assets/icons/share.svg" alt="An icon showing two lines usually to representing sharable content" class="icon" id="share-icon">
+                </div>
+            </div>
+            <div class="project-card">
+                <h3 class="title" id="p3-title">Impossible App</h3>
+                <p class="description" id="p3-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil deserunt nisi, porro numquam commodi minima ducimus similique distinctio laborum voluptatibus ipsam error vero quidem at hic eius? Deleniti, dicta laudantium.</p>
+                <div class="icons" id="p3-icons"> 
+                    <img src="./assets/icons/star.svg" alt="A star to favourite the project" class="icon" id="star-icon"> 
+                    <img src="./assets/icons/eye.svg" alt="An eye to set the view option of card" class="icon" id="eye-icon">
+                    <img src="./assets/icons/share.svg" alt="An icon showing two lines usually to representing sharable content" class="icon" id="share-icon">
+                </div>
+            </div>
+            <div class="project-card">
+                <h3 class="title" id="p4-title">Easy Peasy App</h3>
+                <p class="description" id="p4-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil deserunt nisi, porro numquam commodi minima ducimus similique distinctio laborum voluptatibus ipsam error vero quidem at hic eius? Deleniti, dicta laudantium.</p>
+                <div class="icons" id="p4-icons"> 
+                    <img src="./assets/icons/star.svg" alt="A star to favourite the project" class="icon" id="star-icon"> 
+                    <img src="./assets/icons/eye.svg" alt="An eye to set the view option of card" class="icon" id="eye-icon">
+                    <img src="./assets/icons/share.svg" alt="An icon showing two lines usually to representing sharable content" class="icon" id="share-icon">
+                </div>
+            </div>
+            <div class="project-card">
+                <h3 class="title" id="p5-title">Ad Blocker</h3>
+                <p class="description" id="p5-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil deserunt nisi, porro numquam commodi minima ducimus similique distinctio laborum voluptatibus ipsam error vero quidem at hic eius? Deleniti, dicta laudantium.</p>
+                <div class="icons" id="p5-icons"> 
+                    <img src="./assets/icons/star.svg" alt="A star to favourite the project" class="icon" id="star-icon"> 
+                    <img src="./assets/icons/eye.svg" alt="An eye to set the view option of card" class="icon" id="eye-icon">
+                    <img src="./assets/icons/share.svg" alt="An icon showing two lines usually to representing sharable content" class="icon" id="share-icon">
+                </div>
+            </div>
+            <div class="project-card">
+                <h3 class="title" id="p6-title">Money Maker</h3>
+                <p class="description" id="p6-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil deserunt nisi, porro numquam commodi minima ducimus similique distinctio laborum voluptatibus ipsam error vero quidem at hic eius? Deleniti, dicta laudantium.</p>
+                <div class="icons" id="p6-icons"> 
+                    <img src="./assets/icons/star.svg" alt="A star to favourite the project" class="icon" id="star-icon"> 
+                    <img src="./assets/icons/eye.svg" alt="An eye to set the view option of card" class="icon" id="eye-icon">
+                    <img src="./assets/icons/share.svg" alt="An icon showing two lines usually to representing sharable content" class="icon" id="share-icon">
+                </div>
+            </div>
         </div>
         <div class="right-menu">
             <div class="menu" id="announcements">
@@ -109,10 +157,26 @@
             <div class="menu" id="trending">
                 <h3 class="title" id="trend-title">Trending</h3>
                 <div class="card" id="trend-card">
-                    <div class="trend-1">Profile 1</div>
-                    <div class="trend-2">Profile 2</div>
-                    <div class="trend-3">Profile 3</div>
-                    <div class="trend-4">Profile 4</div>
+                    <div class="trend-1">
+                        <img src="./assets/icons/avatar.svg" alt="User avatar" class="avatar" id="trend-1-avatar">
+                        <p class="@" id="@-trend-1">@user1</p>
+                        <p class="userName" id="user-trend-1">Name of User 1</p>
+                    </div>
+                    <div class="trend-2">
+                        <img src="./assets/icons/avatar.svg" alt="User avatar" class="avatar" id="trend-2-avatar">
+                        <p class="@" id="@-trend-2">@user2</p>
+                        <p class="userName" id="user-trend-2">Name of User 2</p>
+                    </div>
+                    <div class="trend-3">
+                        <img src="./assets/icons/avatar.svg" alt="User avatar" class="avatar" id="trend-3-avatar">
+                        <p class="@" id="@-trend-3">@user3</p>
+                        <p class="userName" id="user-trend-3">Name of User 3</p>
+                    </div>
+                    <div class="trend-4">
+                        <img src="./assets/icons/avatar.svg" alt="User avatar" class="avatar" id="trend-4-avatar">
+                        <p class="@" id="@-trend-4">@user4</p>
+                        <p class="userName" id="user-trend-4">Name of User 4</p>
+                    </div>
                 </div>
             </div>
         </div>
