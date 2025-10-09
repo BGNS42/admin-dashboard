@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 
     --right-menu-fz-s: clamp(10%, 3vw, .7rem);
     --right-menu-fz-m: clamp(10%, 3vw, .9rem);
+    --right-menu-fz-l: clamp(10%, 3vw, 1.2rem);
 
     --title-margin-bottom: -.8rem;
 }
@@ -81,7 +82,7 @@ body {
 
 .container {
     display: grid;
-    grid-template: auto 1fr / 1fr 3fr 1fr ;
+    grid-template: auto auto / 1fr 3fr 1fr ;
 
     grid-template-areas: 
       "sidebar header header"
@@ -272,11 +273,45 @@ li .icon {
     margin-bottom: var(--title-margin-bottom);
 }
 
-.article > div {
+.article .project-card {
     background-color: var(--white-bg-clr);
     border-radius: 5px;
     padding: .5rem;
     box-shadow: var(--shadow-preset);
+
+    display: grid;
+    grid-template: minmax(10%, 32px) 1fr minmax(10px, 30px) / 1fr;
+
+    grid-template-areas: 
+      "title"
+      "content"
+      "icons";
+
+    gap: min(50%, 5px);
+
+    padding: 15px;
+}
+
+.project-card .title {
+  grid-area: title;
+  font-size: var(--right-menu-fz-l);
+}
+
+.project-card .description {
+  grid-area: content;
+  font-size: var(--right-menu-fz-s);
+}
+
+.project-card .icons {
+  grid-area: icons;
+
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.icons [id*="-icon"] {
+  width: min(30px, 10%);
 }
 
 .article>div:last-child,
@@ -337,7 +372,8 @@ li .icon {
   padding: 5px;
 }
 
-[class="title"] {
+.article > [class="title"],
+.right-menu [class="title"] {
   font-size: 1rem;
   align-self: end;
 
