@@ -71,6 +71,8 @@ h1, h2, h3, h4, h5, h6 {
 
     --right-menu-fz-s: clamp(10%, 3vw, .7rem);
     --right-menu-fz-m: clamp(10%, 3vw, .9rem);
+
+    --title-margin-bottom: -.8rem;
 }
 
 body {
@@ -265,7 +267,9 @@ li .icon {
 .article .title {
     grid-row: 1;
     grid-column: 1 / -1;
-    align-self: end;
+    /* align-self: end; */
+
+    margin-bottom: var(--title-margin-bottom);
 }
 
 .article > div {
@@ -301,7 +305,6 @@ li .icon {
 }
 
 #trending.menu {
-  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -329,4 +332,6 @@ li .icon {
 [class="title"] {
   font-size: 1rem;
   align-self: end;
+
+  margin-bottom: var(--title-margin-bottom);
 }
