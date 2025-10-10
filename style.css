@@ -97,6 +97,7 @@ body {
     border: 1px solid blue;
 } */
 
+/* ------------ HEADER ----------- */
 .header {
   grid-area: header;
 
@@ -205,6 +206,7 @@ body {
   color: var(--sidebar-fnt-clr);
 }
 
+/* ------------ SIDEBAR ----------- */
 .sidebar {
     grid-area: sidebar;
     display: grid;
@@ -260,6 +262,7 @@ li .icon {
     margin-top: 2rem;
 }
 
+/* ------------ MAIN ----------- */
 .article {
     grid-area: article;
 
@@ -342,7 +345,7 @@ li .icon {
     margin-bottom: 1rem;
 }
 
-
+/* ------------ RIGHT MENU ----------- */
 .right-menu {
     grid-area: rightMenu;
 
