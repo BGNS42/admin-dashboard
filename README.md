@@ -97,6 +97,10 @@ cd admin-dashboard
 
 **Solution:** I created CSS variables for core values like spacing units, colors, and font sizes. Base styles were defined for tags like h1, button, p, and icons were normalized for size and alignment using utility classes or inline styles.
 
+## 🖼️ Asset Credits
+- **Avatar icons** used in this project were <a href="http://www.freepik.com">Designed by Freepik</a>
+
+
 ## 🧑‍💻 Author
 
 Made by [BGNS42](https://github.com/BGNS42)
