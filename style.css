@@ -69,13 +69,15 @@ h1, h2, h3, h4, h5, h6 {
 
   --padding-top: 2rem;
 
-  --right-menu-fz-s: clamp(min(50%,0.7rem), 2vw, 80%);
+  --right-menu-fz-s: clamp(min(50%,0.7rem), 1vw, 80%);
   /* --right-menu-fz-m: clamp(10%, 2vw, .9rem); */
   --right-menu-fz-m: clamp(min(10%, .9rem), 2vw, 60%);
   /* --right-menu-fz-l: clamp(10%, 2vw, 1.2rem); */
   --right-menu-fz-l: clamp(1.2rem, calc(1vw + 1rem), 80%);
 
   --title-margin-bottom: -.8rem;
+
+  --project-card-radius: 10px;
 }
 
 body {
@@ -262,7 +264,7 @@ li .icon {
     grid-area: article;
 
     display: grid;
-    grid-template: min(50%, 30px) repeat(3, 1fr) / 1fr 1fr;
+    grid-template: min(50%, 30px) repeat(3, 1fr) / repeat(2, 1fr);
 
     gap: 1rem;
     padding: 1rem;
@@ -280,21 +282,32 @@ li .icon {
 
 .article .project-card {
     background-color: var(--white-bg-clr);
-    border-radius: 5px;
-    padding: .5rem;
+    border-radius: var(--project-card-radius);
     box-shadow: var(--shadow-preset);
 
     display: grid;
-    grid-template: minmax(32px, 60px) minmax(20%, 1fr) minmax(10px, 30px) / 1fr;
+    grid-template: minmax(32px, 60px) minmax(20%, 1fr) minmax(10px, 30px) / minmax(15px, 3px) 1fr;
 
     grid-template-areas: 
-      "title"
-      "content"
-      "icons";
+      "rect title"
+      "rect content"
+      "rect icons";
 
     gap: min(50%, 5px);
 
-    padding: 15px;
+    /* padding: 15px; */
+    padding-right: 15px;
+
+}
+
+.project-card .rectangle {
+  width: 10px;
+  height: auto;
+  background-color: orange;
+  border-top-left-radius: var(--project-card-radius);
+  border-bottom-left-radius: var(--project-card-radius);
+
+  grid-area: rect;
 }
 
 .project-card .title {
@@ -317,6 +330,7 @@ li .icon {
   display: flex;
   justify-content: end;
   gap: 1rem;
+  padding-bottom: 10px;
 }
 
 .icons [id*="-icon"] {
